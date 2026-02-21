@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4FDC12272EFEDD800073C673 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4FDC12262EFEDD800073C673 /* Kingfisher */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		4F128AF62EFAA735004D9BD6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -33,7 +37,7 @@
 		4F128B072EFAA735004D9BD6 /* Exceptions for "CineScope" folder in "CineScope" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				Core/Info.plist,
 			);
 			target = 4F128ADE2EFAA732004D9BD6 /* CineScope */;
 		};
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FDC12272EFEDD800073C673 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +96,7 @@
 				4F128AE12EFAA732004D9BD6 /* CineScope */,
 				4F128AF82EFAA735004D9BD6 /* CineScopeTests */,
 				4F128B022EFAA735004D9BD6 /* CineScopeUITests */,
+				4FDC12252EFEDD800073C673 /* Frameworks */,
 				4F128AE02EFAA732004D9BD6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,6 +109,13 @@
 				4F128AFF2EFAA735004D9BD6 /* CineScopeUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4FDC12252EFEDD800073C673 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +138,7 @@
 			);
 			name = CineScope;
 			packageProductDependencies = (
+				4FDC12262EFEDD800073C673 /* Kingfisher */,
 			);
 			productName = CineScope;
 			productReference = 4F128ADF2EFAA732004D9BD6 /* CineScope.app */;
@@ -208,6 +222,9 @@
 			);
 			mainGroup = 4F128AD62EFAA732004D9BD6;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4F4FCA1C2EFEDA8E004306AB /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4F128AE02EFAA732004D9BD6 /* Products */;
 			projectDirPath = "";
@@ -291,7 +308,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7U7CA9M6T2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CineScope/Info.plist;
+				INFOPLIST_FILE = CineScope/Core/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -323,7 +340,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7U7CA9M6T2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CineScope/Info.plist;
+				INFOPLIST_FILE = CineScope/Core/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -591,6 +608,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4F4FCA1C2EFEDA8E004306AB /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.6.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4FDC12262EFEDD800073C673 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F4FCA1C2EFEDA8E004306AB /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4F128AD72EFAA732004D9BD6 /* Project object */;
 }
